@@ -2,6 +2,7 @@ import React from "react";
 import "./navBar.css";
 import { connect } from "react-redux";
 
+import { fetchOnSearchSuccess } from "../../views/Home/redux/actions";
 import { logout } from "../../views/Login/redux/actions";
 import { updateCurrPage } from "../../views/Details/redux/actions";
 import { removeLocalStorage } from "../../utils/apiModule";
@@ -15,9 +16,15 @@ const NavBar = (props) => {
     props.logout();
     props.updateCurrPage("home");
   };
+  const onLogoClick = () => {
+    props.updateCurrPage("home");
+    props.updateSearchedData({ text: "", searchedMedia: [] });
+  };
   return (
     <div className="navbar-container">
-      <h3>The Movie DB</h3>
+      <div onClick={onLogoClick}>
+        <h3>The Movie DB</h3>
+      </div>
       <div>
         {!props.auth.isAuthenticated ? (
           props.page.currPage !== "login" ? (
@@ -43,6 +50,7 @@ const mapDispatchToProps = (dispatch, props) => {
   return {
     updateCurrPage: (page) => dispatch(updateCurrPage(page)),
     logout: () => dispatch(logout()),
+    updateSearchedData: (payload) => dispatch(fetchOnSearchSuccess(payload)),
   };
 };
 const mapStateToProps = (state, props) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./main.css";
 
-import MovieCard from "../MovieCard";
+import Card from "../Card";
 import Loader from "../Loader";
 
 const Main = (props) => {
@@ -16,7 +16,7 @@ const Main = (props) => {
       <div className="main-container">
         {data.length > 0
           ? data.map((item) => {
-              return <MovieCard key={item.id} data={item} />;
+              return <Card key={item.id} data={item} />;
             })
           : null}
       </div>

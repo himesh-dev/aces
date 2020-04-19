@@ -1,16 +1,16 @@
 import React from "react";
-import "./moviecard.css";
+import "./card.css";
 import { connect } from "react-redux";
 import * as actions from "../../views/Details/redux/actions";
 import {
   addToWatchLater,
   removeWatchLater,
 } from "../../views/WatchLater/redux/actions";
-import MoviePoster from "../MoviePoster";
+import Poster from "../Poster";
 
 import { getLocalStorage, setLocalStorage } from "../../utils/apiModule";
 
-const MovieCard = (props) => {
+const Card = (props) => {
   const {
     poster_path,
     title,
@@ -44,7 +44,7 @@ const MovieCard = (props) => {
   return (
     <div className="card-container" onClick={props.onClickHandler}>
       <div className="poster-container">
-        <MoviePoster
+        <Poster
           src={poster_path || profile_path}
           width={200}
           height="240px"
@@ -81,4 +81,4 @@ const mapDispatchToProps = (dispatch, props) => {
     },
   };
 };
-export default connect(mapStateToProps, mapDispatchToProps)(MovieCard);
+export default connect(mapStateToProps, mapDispatchToProps)(Card);

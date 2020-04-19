@@ -1,17 +1,17 @@
 import React from "react";
-import "./movieposter.css";
+import "./poster.css";
 import image from "../../assets/photo.svg";
 
 const imageBaseUrl = "http://image.tmdb.org/t/p";
 
-const MoviePoster = ({ src, width, height }) => {
+const Poster = ({ src, width, height }) => {
   return src ? (
     <img
       className="poster"
       loading="lazy"
       height={height}
       src={`${imageBaseUrl}/w${width}${src}`}
-      alt="Movie Poster"
+      alt="Poster"
     />
   ) : (
     <div className="placeholder-image">
@@ -20,4 +20,4 @@ const MoviePoster = ({ src, width, height }) => {
   );
 };
 
-export default MoviePoster;
+export default Poster;

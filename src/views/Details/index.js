@@ -1,11 +1,11 @@
 import React from 'react';
 import BackButton from '../../components/BackButton'
-import MovieDetails from '../../components/MovieDetails'
+import Description from '../../components/Description'
 const Details = () => {
     return (
         <>
             <BackButton/>
-            <MovieDetails/>
+            <Description/>
         </>
     );
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import "./moviedetails.css";
-import MoviePoster from "../MoviePoster";
+import "./description.css";
+import Poster from "../Poster";
 import { connect } from "react-redux";
 
-const MovieDetails = (props) => {
+const Description = (props) => {
   const {
     poster_path,
     title,
@@ -17,7 +17,7 @@ const MovieDetails = (props) => {
   return (
     <div className="details-container">
       <div className="details-poster-container">
-        <MoviePoster src={poster_path || profile_path} width={300} />
+        <Poster src={poster_path || profile_path} width={300} />
       </div>
       <div>
         <table cellSpacing="5" style={{ marginTop: "1rem" }}>
@@ -55,4 +55,4 @@ const mapStateToProps = (state, props) => {
     data: state.detailsReducer,
   };
 };
-export default connect(mapStateToProps)(MovieDetails);
+export default connect(mapStateToProps)(Description);
