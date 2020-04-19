@@ -1,0 +1,2 @@
+export const UPDATE_CURR_PAGE = "UPDATE_CURR_PAGE";
+export const UPDATE_CURR_ITEM = "UPDATE_CURR_ITEM";

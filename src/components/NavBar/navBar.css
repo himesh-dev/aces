@@ -1,0 +1,29 @@
+.navbar-container {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-container > p,
+h3 {
+  color: blanchedalmond;
+}
+.navbar-container > h3 {
+  margin-left: 5rem;
+}
+.navbar-container>div{
+  margin-right: 5rem;
+  align-self: center;
+}
+.navbar-container>div>button{
+  margin-left: 1rem;
+  /* padding: 10px; */
+  height:30px;
+  background: transparent;
+  border:1px solid blanchedalmond;
+  color: blanchedalmond;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

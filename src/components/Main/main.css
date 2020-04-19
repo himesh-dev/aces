@@ -1,0 +1,22 @@
+.main-container{
+    /* background-color: blue; */
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    align-content: flex-start;
+}
+.main-title{
+    /* margin:0; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    color:rgb(8, 6, 39);
+    display: inline-block;
+    align-items: center;
+    padding-left: 5rem;
+}

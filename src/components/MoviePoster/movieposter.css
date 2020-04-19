@@ -1,0 +1,21 @@
+.poster{
+    height:100%;
+    /* max-height: 300px; */
+    /* max-width: 80%; */
+    /* width:150px; */
+    overflow: hidden;
+    object-fit: cover;
+    align-self: flex-end;
+    border-radius: 8px;
+    /* margin: auto; */
+}
+.placeholder-image{
+    height: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    align-content: center;
+    background-color: #dbdbdb;
+    display: flex;
+    width: 80%;
+    border-radius:8px;
+}

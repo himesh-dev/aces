@@ -1,0 +1,27 @@
+.details-container {
+  /* background-color: yellow; */
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.details-poster-container {
+  margin-right: 2rem;
+  display: flex;
+  min-width: 300px;
+  overflow: hidden;
+}
+th,
+td {
+  /* background-color: yellowgreen; */
+  vertical-align: baseline;
+  text-align: left;
+}
+th{
+width:120px;
+}
+td {
+  font-size: 14px;
+}

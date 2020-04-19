@@ -1,0 +1,16 @@
+.backbutton {
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.back-img {
+  margin-right: 5px;
+  align-self: center;
+}
+.backbutton > p {
+  margin: 0;
+  align-self: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
